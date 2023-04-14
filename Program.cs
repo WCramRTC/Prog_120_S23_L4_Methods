@@ -1,27 +1,31 @@
-﻿namespace Prog_120_S23_L4_Methods
+﻿using System.Globalization;
+
+namespace Prog_120_S23_L4_Methods
 {
     internal class Program
     {
+        static string FirstName = "Will";
+
         static void Main(string[] args)
         { // Start of Main code
-          // Nothing will happen if the code is not written or connected to the Main method
-          // Call a method. It means run the method.
-          //ExampleCode();
-
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-            DisplayMyName();
-
-
+            //string MyFullName = CreateFullName("Will", "Cram");
+            //Console.WriteLine(MyFullName);
+            Example2();
 
         } // Main
+
+        public static double Add(double num1, double num2)
+        {
+            return num1 + num2;
+        }
+
+
+        // public static RETURN TYPE
+        public static string CreateFullName(string firstName, string lastName)
+        {
+            // IMPORTANT KEYWORD - REUTRN
+            return $"{firstName} {lastName}";
+        }
 
         // Outside of Main
 
@@ -34,11 +38,34 @@
         } // DisplayMyName
 
         // New method that takes Parameters
-        public static void DisplayAName()
+        public static void DisplayAName(string firstName, string lastName)
         {
 
+            //string fullName = $"{firstName} {lastName}";
+            string fullName = CreateFullName(firstName, lastName);
+            Console.WriteLine(fullName);
+            Console.WriteLine("Greetings Everyone");
+            
+            Console.WriteLine($"Welcome to my class, {firstName}");
         } // DisplayAName
 
+        // Void is a keyword that means nothing is REUTRNING fromt the method
+        
+        // Creating a method that takes two parameters, and RETURNS a string
+
+
+
+        public static void Example2()
+        {
+            // Nothing will happen if the code is not written or connected to the Main method
+            // Call a method. It means run the method.
+            //ExampleCode();
+            // It's an argument
+            DisplayAName("David", "Abarca");
+            DisplayAName("Nancy", "Le");
+            DisplayAName("Morcire", "Sylla");
+            DisplayAName("Benel", "Alcine");
+        }
 
         // Inside of class
 

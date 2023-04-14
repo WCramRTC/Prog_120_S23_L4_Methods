@@ -6,7 +6,20 @@
         { // Start of Main code
           // Nothing will happen if the code is not written or connected to the Main method
           // Call a method. It means run the method.
-            //ExampleCode();
+          //ExampleCode();
+
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+            DisplayMyName();
+
+
 
         } // Main
 
@@ -16,8 +29,16 @@
         // Declaring a method
         public static void DisplayMyName()
         {
+            Console.WriteLine("William Cram");
+            Console.WriteLine("Greetings Everyone");
+        } // DisplayMyName
 
-        }
+        // New method that takes Parameters
+        public static void DisplayAName()
+        {
+
+        } // DisplayAName
+
 
         // Inside of class
 
